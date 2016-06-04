@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="en" ng-app="app">
+<html lang="en" data-ng-app="app">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-<title data-ng-bind="title"></title>
+<title data-ng-bind="title">User registeration</title>
 <meta name="description" content="A user module for login and registration.">
 <!-- Open Graph -->
 <meta property="og:title" content="Sign in to your account"/>
@@ -54,9 +54,9 @@
       </li>    
     </ol><!-- breadcrumb -->
     
-    <section class="main user">
-    	<div ng-view></div>
-    </section>
+    <div class="main user">
+    	<div data-ng-view></div>
+    </div>
   </div><!-- wrapper -->	
   <!-- External libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
