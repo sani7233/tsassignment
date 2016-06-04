@@ -1,0 +1,67 @@
+<h1 class="title-heading">
+	Register
+    <span>Create an account and get started today.</span>    
+</h1>
+<section class="form-wrapper">
+  <form name="frmRegister" novalidate>
+    <fieldset>
+      <legend>Register</legend> 	
+      <div>
+        <label for="forename">Forename</label>
+        <input class="form-field" type="text" id="forename" name="forename" ng-model="forename" ng-maxlength="100" placeholder="Forename" required />  
+        <div ng-messages="frmRegister.forename.$error" ng-show="frmRegister.forename.$touched">
+          <div ng-messages-include="app/validation-messages.html"></div>
+        </div>
+      </div>
+      <div>
+        <label for="surname">Surname</label>
+        <input class="form-field" type="text" id="surname" name="surname" ng-model="surname" ng-maxlength="100" placeholder="Surname" required />   	
+      	<div ng-messages="frmRegister.surname.$error" ng-show="frmRegister.surname.$touched">
+          <div ng-messages-include="app/validation-messages.html"></div>
+        </div>
+      </div>
+      <div>
+        <label for="ddlSex">Sex</label>
+        <select class="form-field" name="ddlSex" id="ddlSex" required>
+          <option value="">Please select</option>     
+		  <option value="Male">Male</option>
+          <option value="Female">Female</option>	        
+        </select>  	
+      </div>
+      <div>
+        <label for="dob">Date of birth</label>
+        <input class="form-field" type="date" id="dob" name="dob" ng-model="date" required dob-calendar />  
+        <div ng-messages="frmRegister.dob.$error" ng-show="frmRegister.dob.$touched">
+          <div ng-messages-include="app/validation-messages.html"></div>
+        </div> 	
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input class="form-field" type="email" id="email" name="email" ng-model="email" placeholder="Email address" required />   	
+      	<div ng-messages="frmRegister.email.$error" ng-if="frmRegister.email.$touched">
+          <div ng-messages-include="app/validation-messages.html"></div>
+        </div>
+      </div>
+      <div>
+        <label for="emailVerification">Verify Email Address</label>
+        <input class="form-field" type="email" id="emailVerification" name="emailVerification" ng-model="emailVerification" placeholder="Verify email address" required />
+        <div ng-messages="frmRegister.emailVerification.$error" ng-if="frmRegister.emailVerification.$touched">
+          <div ng-messages-include="app/validation-messages.html"></div>
+        </div>   	
+      </div>
+      <div  ng-class="{ 'has-error': userForm.name.$invalid }">
+        <label for="password">Password</label>
+        <input class="form-field" type="password" id="password" name="password" placeholder="Password"ng-model="password" ng-minlength="7" ng-maxlength="25" required />   	
+      	<div ng-messages="frmRegister.password.$error" ng-show="frmRegister.password.$touched">
+          <div ng-messages-include="app/validation-messages.html"></div>
+        </div> 
+      </div>
+      <div>
+        <input class="btn btn-large btn-dark" type="button" value="Register" />	
+      </div>	
+    </fieldset>
+  </form>
+  <aside>
+    <a href="#/register" class="btn btn-large btn-light">Register today</a>	
+  </aside>
+</section>

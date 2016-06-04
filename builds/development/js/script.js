@@ -76,7 +76,7 @@
 (function() {
 	'use strict';
 	
-	angular.module('Register', []);
+	angular.module('Register', ['ngMessages']);
 })();
 /**
  * @name app_module.Register.ctrlRegister

@@ -5,5 +5,5 @@
 (function() {
 	'use strict';
 	
-	angular.module('Register', []);
+	angular.module('Register', ['ngMessages']);
 })();
