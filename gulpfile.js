@@ -7,6 +7,11 @@ var gulp = require('gulp'),
 // Resources path
 var sassSource = ['components/sass/main.scss'];
 var htmlSource = ['builds/development/*.html'];
+var jsSource = [
+	'builds/development/app/app.module.js',
+	'builds/development/app/login/login.module.js',
+	'builds/development/app/register/register.module.js',
+];
 
 // Html task
 gulp.task('html', function() {
@@ -23,10 +28,19 @@ gulp.task('styles', function() {
 	  .pipe(connect.reload());	  
 });
 
+// Js task
+gulp.task('js', function() {
+  gulp.src(jsSource)
+  .pipe(concat('script.js'))
+  .pipe(gulp.dest('builds/development/js'))
+  .pipe(connect.reload());
+});
+
 // Watch task to monitor changes in source
 gulp.task('watch', function() {
+  gulp.watch(htmlSource, ['html']); 
   gulp.watch('components/sass/*.scss', ['styles']); 
-  gulp.watch(htmlSource, ['html']); 	
+  gulp.watch(jsSource, ['js']); 	
 });
 	
 // Live reload task
@@ -38,4 +52,4 @@ gulp.task("connect", function() {
 });
 
 // Default task
-gulp.task('default', ['html','styles','connect','watch']);
+gulp.task('default', ['html','styles','js','connect','watch']);
