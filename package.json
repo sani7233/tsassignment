@@ -1,0 +1,10 @@
+{
+  "name": "tsassignment",
+  "version": "0.0.1",
+  "description": "A user register module in Angular",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Sajjad Haider"
+}
