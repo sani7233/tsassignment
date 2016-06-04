@@ -12,6 +12,7 @@ form {
     float: left;
     width: 50%;
     padding: 2%;
+    position: relative;
     background: lighten($primary-color, 53%);
     @include respond-to(handhelds) { 
         width: 96%;
