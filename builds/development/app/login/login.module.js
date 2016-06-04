@@ -1,5 +1,5 @@
 /**
- * @class app_module.Signin
+ * @class app_module.Login
  * @memberOf app.module
  */
 (function() {

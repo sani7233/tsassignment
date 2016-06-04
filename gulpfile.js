@@ -9,9 +9,11 @@ var sassSource = ['components/sass/main.scss'];
 var htmlSource = ['builds/development/**/*.html'];
 var jsSource = [
 	'builds/development/app/app.module.js',
+	'builds/development/app/route.module.js',
 	'builds/development/app/login/login.module.js',
-	'builds/development/app/register/login.controller.js',
+	'builds/development/app/login/login.controller.js',	
 	'builds/development/app/register/register.module.js',
+	'builds/development/app/register/register.controller.js',	
 ];
 
 // Html task

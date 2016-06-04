@@ -5,9 +5,10 @@
 	'use strict';
 	
 	angular.module('app', 
-		[	
+		[				
 			'Login',
-			'Register'
+			'Register',
+			'appCustomRoute'
 		]
 	);
 	

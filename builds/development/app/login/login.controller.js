@@ -1,5 +1,5 @@
 /**
- * @name app_module.Signin.ctrlLogin
+ * @name app_module.Login.ctrlLogin
  */ 
 (function() {
 	'use strict';
