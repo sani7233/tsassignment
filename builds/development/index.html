@@ -14,7 +14,7 @@
 <!-- Stylesheet -->
 <link rel="stylesheet" href="css/reset_normalize.css" />
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/main.css" />
 
 <!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,7 +23,24 @@
 
 <body>
   <div class="wrapper">
-    <header></header>
+    <header>
+      <div class="header-content-wrapper">
+        <a href="#/" class="pull-left" title="Go to home page"><img src="images/logo.jpg" alt="User App " data-role="logo" /></a>
+        <nav data-role="navigation">
+          <ul class="nav-primary block-list pull-left">
+            <li><a href="#" title="">Buy</a></li>
+            <li><a href="#" title="">Sell</a></li>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Blog</a></li>
+          </ul>
+        </nav>
+        
+        <ul class="pull-right block-list">
+          <li><a href="#/login" title="">Login</a></li>
+          <li><a href="#/register" title="">Register</a></li>
+        </ul>
+      </div>
+    </header><!-- header -->
     <ol class="breadcrumb"></ol>
     <section class="main"></section>
   </div><!-- wrapper -->	
