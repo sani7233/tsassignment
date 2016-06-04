@@ -2,27 +2,30 @@
   Login
   <span>Access your account.</span>
 </h1>
-<section class="signin">
+<section class="login-wrapper">
   <form name="frmLogin" novalidate ng-submit="submitLoginForm(frmLogin.$valid)">
     <fieldset>
       <legend>Login</legend> 	
       <div ng-class="{ 'has-error': frmLogin.username.$invalid && !frmLogin.username.$pristine }">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Username" ng-model="username" ng-maxlength="100" required />  
+        <input class="form-field" type="text" id="username" name="username" placeholder="Username" ng-model="username" ng-maxlength="100" required />  
         <div ng-messages="frmLogin.username.$error" ng-show="frmLogin.username.$touched">
           <div ng-messages-include="app/validation-messages.html"></div>
         </div>
       </div>
-      <div>
+      <div ng-class="{ 'has-error': frmLogin.username.$invalid && !frmLogin.username.$pristine }">
         <label for="password">Password</label>
-        <input type="text" id="password" name="password" placeholder="Password" ng-model="password" ng-minlength="7" ng-maxlength="25" required />
+        <input class="form-field" type="password" id="password" name="password" placeholder="Password" ng-model="password" ng-minlength="7" ng-maxlength="25" required />
         <div ng-messages="frmLogin.password.$error" ng-show="frmLogin.password.$touched">
           <div ng-messages-include="app/validation-messages.html"></div>
         </div>   	
       </div>
       <div>
-        <input type="button" value="Login" />	
+        <input type="button" class="btn btn-large btn-dark" value="Login" />	
       </div>	
     </fieldset>
   </form>
+  <aside>
+    <a href="#/register" class="btn btn-large btn-light">Register today</a>	
+  </aside>
 </section>

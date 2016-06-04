@@ -7,14 +7,18 @@
     float: left;
 	width: 100%;
     background: lighten($primary-color, 30%);
-}
-.header-content-wrapper {
+    
     li {
         a {
             color: darken($primary-color, 50%);
             float: left;
             padding: 10px 30px;
         }
+    }
+}
+.nav-primary {
+    @include respond-to(handhelds) { 
+        display: none;
     }
 }
 .list-operation-user {
@@ -33,4 +37,32 @@
     font-size: .8em;
     padding: 3px;
     background: lighten($primary-color, 40%);
+}
+.title-heading {
+	font-size: 3em;
+	margin-top: 30px;
+	font-weight: bold;
+    
+    span {
+        display: block;
+	   font-size: .5em;
+    }
+}
+.main {
+	padding: 2%;
+}
+.login-wrapper {
+    padding: 1%;
+    overflow: hidden;
+    background: lighten($primary-color, 48%);
+}
+aside {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+    @include respond-to(handhelds) { 
+        padding: 20px 0;
+        width: 96%;
+    }
 }

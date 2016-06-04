@@ -1,0 +1,20 @@
+.has-error label, .has-error p {
+	color: #f00;
+}
+.btn-large {
+    padding: 10px 30px;
+}
+.btn-dark {
+    background: darken($primary-color, 20%);
+    @include respond-to(handhelds) { 
+        width: 100%;
+        display: block;
+    }    
+}
+.btn-light {
+    color: #000;
+    background: lighten($primary-color, 40%);
+}
+.btn-bold {
+    font-weight: bold;
+}
