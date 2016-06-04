@@ -1,0 +1,36 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: $primary-width;
+	background: #fff;
+}
+.header-content-wrapper {
+    float: left;
+	width: 100%;
+    background: lighten($primary-color, 30%);
+}
+.header-content-wrapper {
+    li {
+        a {
+            color: darken($primary-color, 50%);
+            float: left;
+            padding: 10px 30px;
+        }
+    }
+}
+.list-operation-user {
+    li:first-child {
+        a {
+            background: lighten($primary-color, 20%);
+        }
+    }
+    li {
+        a {
+            background: lighten($primary-color, 10%);
+        }
+    }
+}
+.breadcrumb {
+    font-size: .8em;
+    padding: 3px;
+    background: lighten($primary-color, 40%);
+}

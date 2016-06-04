@@ -12,7 +12,6 @@
 <meta property="og:url" content="http://localhost:8080/"/>
 <meta property="og:image" content="http://localhost:8080/app/images/og-image.jpg"/>
 <!-- Stylesheet -->
-<link rel="stylesheet" href="css/reset_normalize.css" />
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
 <link rel="stylesheet" href="css/main.css" />
 
@@ -35,13 +34,26 @@
           </ul>
         </nav>
         
-        <ul class="pull-right block-list">
+        <ul class="list-operation-user pull-right block-list">
           <li><a href="#/login" title="">Login</a></li>
           <li><a href="#/register" title="">Register</a></li>
         </ul>
       </div>
     </header><!-- header -->
-    <ol class="breadcrumb"></ol>
+    
+    <ol class="breadcrumb block-list">
+      <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="#/signin" itemprop="url">
+          <span itemprop="title">Login</span>
+        </a>
+      </li>
+      <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="#/register" itemprop="url">
+          <span itemprop="title">Register</span>
+        </a>
+      </li>    
+    </ol><!-- breadcrumb -->
+    
     <section class="main"></section>
   </div><!-- wrapper -->	
   <!-- External libraries -->
