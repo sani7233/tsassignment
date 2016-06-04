@@ -5,5 +5,5 @@
 (function() {
 	'use strict';
 	
-	angular.module('Login', []);
+	angular.module('Login', ['ngMessages']);
 })();

@@ -6,10 +6,11 @@ var gulp = require('gulp'),
 
 // Resources path
 var sassSource = ['components/sass/main.scss'];
-var htmlSource = ['builds/development/*.html'];
+var htmlSource = ['builds/development/**/*.html'];
 var jsSource = [
 	'builds/development/app/app.module.js',
 	'builds/development/app/login/login.module.js',
+	'builds/development/app/register/login.controller.js',
 	'builds/development/app/register/register.module.js',
 ];
 
