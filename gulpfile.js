@@ -14,7 +14,8 @@ var jsSource = [
 	'builds/development/app/login/login.controller.js',	
 	'builds/development/app/register/register.module.js',
 	'builds/development/app/register/register.modernizr.provider.js',
-	'builds/development/app/register/register.dob.directive.js',	
+	'builds/development/app/register/register.dob.directive.js',
+	'builds/development/app/register/register.password.directive.js',	
 	'builds/development/app/register/register.controller.js',	
 ];
 

@@ -49,13 +49,7 @@
           <div ng-messages-include="app/validation-messages.html"></div>
         </div>   	
       </div>
-      <div  ng-class="{ 'has-error': userForm.name.$invalid }">
-        <label for="password">Password</label>
-        <input class="form-field" type="password" id="password" name="password" placeholder="Password"ng-model="password" ng-minlength="7" ng-maxlength="25" required />   	
-      	<div ng-messages="frmRegister.password.$error" ng-show="frmRegister.password.$touched">
-          <div ng-messages-include="app/validation-messages.html"></div>
-        </div> 
-      </div>
+      <show-hide-password></show-hide-password>
       <div>
         <input class="btn btn-large btn-dark" type="button" value="Register" />	
       </div>	
